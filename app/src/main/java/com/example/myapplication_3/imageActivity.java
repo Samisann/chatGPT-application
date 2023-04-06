@@ -9,6 +9,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 
+import com.google.firebase.database.FirebaseDatabase;
 import com.squareup.picasso.Picasso;
 
 import org.json.JSONArray;
@@ -23,8 +24,10 @@ import okhttp3.*;
 public class imageActivity extends AppCompatActivity {
     private static final MediaType JSON = MediaType.parse("application/json; charset=utf-8");
     private static final String API_URL = "https://api.openai.com/v1/images/generations";
-    private static final String API_KEY = "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";
+    private static final String API_KEY = "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";
 
+    private static final String API_KEY_URL="";
+    private FirebaseDatabase database;
     private String userTextString;
 
 
@@ -32,7 +35,7 @@ public class imageActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_image);
-
+        database = FirebaseDatabase.getInstance();
 
         Button sendingButton = findViewById(
                 R.id.buttonEnvoyer
@@ -51,8 +54,6 @@ public class imageActivity extends AppCompatActivity {
 
             public void generateImages(String prompt) {
                 OkHttpClient client = new OkHttpClient();
-
-
 
                 ProgressBar progressBar = findViewById(R.id.progressBar);
                 progressBar.setProgressTintList(ColorStateList.valueOf(Color.WHITE));

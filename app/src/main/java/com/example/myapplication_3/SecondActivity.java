@@ -21,7 +21,7 @@ public class SecondActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(SecondActivity
                         .this
-                        , imageActivity.class);
+                        , PromptActivity.class);
                 startActivity(intent);
             }
         });

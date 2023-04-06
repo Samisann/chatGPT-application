@@ -14,11 +14,14 @@
         android:theme="@style/Theme.AppCompat"
         tools:targetApi="31">
         <activity
+            android:name=".PromptActivity"
+            android:exported="false" />
+        <activity
             android:name=".imageActivity"
             android:exported="false" />
         <activity
             android:name=".EmailPasswordActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".ChatActivity"
             android:exported="true" />
