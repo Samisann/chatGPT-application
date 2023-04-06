@@ -27,6 +27,8 @@
 
          />
 
+
+
     <EditText
         android:id="@+id/editTextUser"
         android:layout_width="match_parent"
@@ -38,8 +40,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Envoyer ma demande" />
-
-
 
 
 
