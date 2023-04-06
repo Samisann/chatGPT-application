@@ -5,6 +5,44 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".chat_activity">
+    tools:context=".ChatActivity">
+
+
+  <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:padding="16dp"
+      >
+
+    <ImageView
+        android:id="@+id/imageCree"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="120px"
+        android:contentDescription="image créer par l'api"
+        android:scaleType="centerCrop"
+
+        android:layout_marginBottom="800px"
+
+         />
+
+    <EditText
+        android:id="@+id/editTextUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Entrez votre demande ici" />
+
+    <Button
+        android:id="@+id/buttonEnvoyer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Envoyer ma demande" />
+
+
+
+
+
+  </LinearLayout>
 
   </androidx.constraintlayout.widget.ConstraintLayout>

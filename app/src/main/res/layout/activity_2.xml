@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity_2">
+    tools:context=".SecondActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -17,13 +17,13 @@
             android:id="@+id/hero_banner_image_view"
             android:layout_width="match_parent"
             android:layout_height="400dp"
+            android:layout_marginTop="120px"
             android:contentDescription="hero banner"
             android:scaleType="centerCrop"
-            android:layout_marginTop="90px"
             android:src="@drawable/hero_banner" />
 
         <Button
-            android:id="@+id/start_button"
+            android:id="@+id/commencer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/hero_banner_image_view"
@@ -35,8 +35,16 @@
             android:id="@+id/chat_recycler_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/start_button"
+            android:layout_below="@id/commencer"
             android:layout_marginTop="115dp" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme" />
 
 
     </RelativeLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1030438461868",
+    "project_id": "chat-gpt-app-d1d3c",
+    "storage_bucket": "chat-gpt-app-d1d3c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1030438461868:android:368d3e32efe956e3b71a09",
+        "android_client_info": {
+          "package_name": "com.example.myapplication_3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1030438461868-2rdf9uqkkm8n7gs1unfjg7eo8lv9mmkk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAupD_FzO67NLtZjv3aRw0r_U6sNPeFYmQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1030438461868-2rdf9uqkkm8n7gs1unfjg7eo8lv9mmkk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
